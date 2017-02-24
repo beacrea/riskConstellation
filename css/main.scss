@@ -97,6 +97,11 @@ textarea {
 
 // Colors
 $brand_blueA: #142C55;
+$brand_blueB: #000D31;
+$accent_yellow: #F8D31C;
+$accent_red: #ED7979;
+$accent_blue: #86B1FF;
+$accent_green: #59DA9C;
 
 html {
     background: url('../img/M2_bkg_watermarkB.png') $brand_blueA;
@@ -125,6 +130,16 @@ html, body, #containerMain {
 [class*="valueRow"] {
     clear: both;
     display: flex;
+    .title {
+        margin-top: 0.5rem;
+        margin-left: 0.5rem;
+        color: White;
+        font-weight: bold;
+        width: 9rem;
+    }
+}
+.valueRow_footer {
+    background: $brand_blueB;
 }
 .valueRow3 {
     background-color: rgba(255,255,255,0.1);
@@ -136,9 +151,10 @@ html, body, #containerMain {
     background-color: rgba(255,255,255,0.3);
 }
 
-[class*="horizon"] {
+[class*="horizon"]{
     $size: 8rem;
     height: $size;
+    width: $size;
     width: $size;
     flex: 1 auto;
     padding: 1rem;
@@ -147,22 +163,44 @@ html, body, #containerMain {
     margin: 0.25rem;
     color: white;
     display: flex;
+    border-left: 1px solid rgba(255,255,255,0.15);
+}
+.horizon3 {
+    border-left: none;
+}
+.horizon_footer {
+    height: auto;
+    color: White;
+    font-weight: bold;
+    &.first {
+        border-left: none;
+    }
 }
 
 .item {
     flex: 1 auto;
-    $size: 1.5rem;
+    $size: 2rem;
     height: $size;
     width: $size;
     max-width: $size;
     background: white;
     margin: 0.25rem;
     border-radius: $size/2;
-    font-size: 0.5rem;
+    font-size: 0.75rem;
     color: black;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.cat_Configuration {
+    background-color: $accent_blue;
+}
+.cat_Offerings {
+    background-color: $accent_yellow;
+}
+.cat_Experience {
+    background-color: $accent_red;
 }
 
 

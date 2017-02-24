@@ -14,6 +14,10 @@ d3.csv("data/data.csv", function(data) {
         var valueClass = '.valueRow' + Math.floor(item[header_value]);
         var horizonClass = '.horizon' + Math.floor(item[header_horizon]);
         var matrixAddress = valueClass + ' > ' + horizonClass;
-        $(matrixAddress).append('<div class="item id_' + item.ID + '"><span>' + item.ID + '</span></div>');
+        $(matrixAddress).append('' +
+            '<div class="item id_' + item.ID + ' cat_' + item.Category +'">' +
+                '<span>' + item.ID + '</span>' +
+            '</div>'
+        );
     }
 });

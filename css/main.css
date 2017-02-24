@@ -100,6 +100,15 @@ html, body, #containerMain {
 [class*="valueRow"] {
   clear: both;
   display: flex; }
+  [class*="valueRow"] .title {
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    color: White;
+    font-weight: bold;
+    width: 9rem; }
+
+.valueRow_footer {
+  background: #000D31; }
 
 .valueRow3 {
   background-color: rgba(255, 255, 255, 0.1); }
@@ -113,26 +122,47 @@ html, body, #containerMain {
 [class*="horizon"] {
   height: 8rem;
   width: 8rem;
+  width: 8rem;
   flex: 1 auto;
   padding: 1rem;
   float: left;
   margin: 0.25rem;
   color: white;
-  display: flex; }
+  display: flex;
+  border-left: 1px solid rgba(255, 255, 255, 0.15); }
+
+.horizon3 {
+  border-left: none; }
+
+.horizon_footer {
+  height: auto;
+  color: White;
+  font-weight: bold; }
+  .horizon_footer.first {
+    border-left: none; }
 
 .item {
   flex: 1 auto;
-  height: 1.5rem;
-  width: 1.5rem;
-  max-width: 1.5rem;
+  height: 2rem;
+  width: 2rem;
+  max-width: 2rem;
   background: white;
   margin: 0.25rem;
-  border-radius: 0.75rem;
-  font-size: 0.5rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
   color: black;
   display: flex;
   justify-content: center;
   align-items: center; }
+
+.cat_Configuration {
+  background-color: #86B1FF; }
+
+.cat_Offerings {
+  background-color: #F8D31C; }
+
+.cat_Experience {
+  background-color: #ED7979; }
 
 /* ==========================================================================
    Helper classes
