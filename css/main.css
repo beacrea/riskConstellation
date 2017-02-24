@@ -77,6 +77,10 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+html {
+  background: url("../img/M2_bkg_watermarkB.png") #142C55;
+  background-size: cover; }
+
 html, body, #containerMain {
   height: 100%;
   width: 100%; }
@@ -88,32 +92,47 @@ html, body, #containerMain {
 
 .grid {
   margin: auto;
-  max-width: 50rem; }
+  max-width: 50rem;
+  width: 90%;
+  border-radius: 0.5rem;
+  overflow: hidden; }
 
 [class*="valueRow"] {
   clear: both;
   display: flex; }
 
 .valueRow3 {
-  background-color: lightblue; }
+  background-color: rgba(255, 255, 255, 0.1); }
 
 .valueRow2 {
-  background-color: lightyellow; }
+  background-color: rgba(255, 255, 255, 0.2); }
 
 .valueRow1 {
-  background-color: lightgreen; }
+  background-color: rgba(255, 255, 255, 0.3); }
 
 [class*="horizon"] {
-  height: 6rem;
-  width: 6rem;
+  height: 8rem;
+  width: 8rem;
   flex: 1 auto;
   padding: 1rem;
-  background: rgba(0, 0, 0, 0.1);
   float: left;
-  margin: 0.25rem; }
+  margin: 0.25rem;
+  color: white;
+  display: flex; }
 
 .item {
-  margin: 0; }
+  flex: 1 auto;
+  height: 1.5rem;
+  width: 1.5rem;
+  max-width: 1.5rem;
+  background: white;
+  margin: 0.25rem;
+  border-radius: 0.75rem;
+  font-size: 0.5rem;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 /* ==========================================================================
    Helper classes

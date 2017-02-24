@@ -95,6 +95,14 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+// Colors
+$brand_blueA: #142C55;
+
+html {
+    background: url('../img/M2_bkg_watermarkB.png') $brand_blueA;
+    background-size: cover;
+}
+
 html, body, #containerMain {
     height: 100%;
     width: 100%;
@@ -109,6 +117,9 @@ html, body, #containerMain {
 .grid {
     margin: auto;
     max-width: 50rem;
+    width: 90%;
+    border-radius: 0.5rem;
+    overflow: hidden;
 }
 
 [class*="valueRow"] {
@@ -116,29 +127,42 @@ html, body, #containerMain {
     display: flex;
 }
 .valueRow3 {
-    background-color: lightblue;
+    background-color: rgba(255,255,255,0.1);
 }
 .valueRow2 {
-    background-color: lightyellow;
+    background-color: rgba(255,255,255,0.2);
 }
 .valueRow1 {
-    background-color: lightgreen;
+    background-color: rgba(255,255,255,0.3);
 }
 
 [class*="horizon"] {
-    $size: 6rem;
+    $size: 8rem;
     height: $size;
     width: $size;
     flex: 1 auto;
     padding: 1rem;
-    background: rgba(0,0,0,0.1);
+    //background: rgba(0,0,0,0.1);
     float: left;
     margin: 0.25rem;
+    color: white;
+    display: flex;
 }
 
 .item {
-    margin: 0;
-
+    flex: 1 auto;
+    $size: 1.5rem;
+    height: $size;
+    width: $size;
+    max-width: $size;
+    background: white;
+    margin: 0.25rem;
+    border-radius: $size/2;
+    font-size: 0.5rem;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
