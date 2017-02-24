@@ -125,6 +125,11 @@ html, body, #containerMain {
     width: 90%;
     border-radius: 0.5rem;
     overflow: hidden;
+    h1 {
+        color: white;
+        line-height: 1;
+        margin: 0 0 0.75rem 0;
+    }
 }
 
 [class*="valueRow"] {
@@ -178,6 +183,7 @@ html, body, #containerMain {
 }
 
 .item {
+    cursor: pointer;
     flex: 1 auto;
     $size: 2rem;
     height: $size;
@@ -203,6 +209,23 @@ html, body, #containerMain {
     background-color: $accent_red;
 }
 
+.legend_group {
+    margin-bottom: 0.5rem;
+    padding: 0.25rem 0rem;
+}
+.legend {
+    color: rgba(255,255,255,0.5);
+    display: inline-block;
+    margin-right: 1rem;
+    font-weight: 100;
+    span {
+        width: 1rem;
+        height: 0.75rem;
+        display: inline-block;
+        margin-right: 0.25rem;
+        border-radius: 0.5rem;
+    }
+}
 
 
 

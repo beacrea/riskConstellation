@@ -96,6 +96,10 @@ html, body, #containerMain {
   width: 90%;
   border-radius: 0.5rem;
   overflow: hidden; }
+  .grid h1 {
+    color: white;
+    line-height: 1;
+    margin: 0 0 0.75rem 0; }
 
 [class*="valueRow"] {
   clear: both;
@@ -142,6 +146,7 @@ html, body, #containerMain {
     border-left: none; }
 
 .item {
+  cursor: pointer;
   flex: 1 auto;
   height: 2rem;
   width: 2rem;
@@ -163,6 +168,22 @@ html, body, #containerMain {
 
 .cat_Experience {
   background-color: #ED7979; }
+
+.legend_group {
+  margin-bottom: 0.5rem;
+  padding: 0.25rem 0rem; }
+
+.legend {
+  color: rgba(255, 255, 255, 0.5);
+  display: inline-block;
+  margin-right: 1rem;
+  font-weight: 100; }
+  .legend span {
+    width: 1rem;
+    height: 0.75rem;
+    display: inline-block;
+    margin-right: 0.25rem;
+    border-radius: 0.5rem; }
 
 /* ==========================================================================
    Helper classes
